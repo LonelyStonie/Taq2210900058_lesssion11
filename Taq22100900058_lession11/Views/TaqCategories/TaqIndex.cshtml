@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Taq22100900058_lession11.Models.TaqCategory>
+
+@{
+    ViewBag.Title = "Danh muc sp";
+    Layout = "~/Views/Shared/_Taq2201900058Layout.cshtml";
+}
+
+<h2>danh muc sp </h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<a href="/TaqCategories/create"class="btn btn-primary my-3"> them moi </a>
+<table class="table tablue-bordered">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TaqID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TaqCateName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TaqStatus)
+        </th>
+        <th>chuc nang </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TaqID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TaqCateName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TaqStatus)
+
+            @if (item.TaqStatus == true)
+            {
+                <text style="color:green"> hoat dong  </text>
+
+            }
+            else
+            {
+                <text style="color:red"> KO hoat dong  </text>
+            }
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.TaqID }) |
+            @Html.ActionLink("Details", "Details", new { id = item.TaqID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.TaqID })
+        </td>
+    </tr>
+}
+
+</table>

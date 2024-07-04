@@ -1,0 +1,59 @@
+﻿@model Taq22100900058_lession11.Models.TaqProduct
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Taq2201900058Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TaqProduct</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TaqProName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TaqProName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TaqQty)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TaqQty)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TaqPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TaqPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TaqCateID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TaqCateID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TaqActive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TaqActive)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TaqID2210900058 }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

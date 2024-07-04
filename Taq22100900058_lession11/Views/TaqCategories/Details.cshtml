@@ -1,0 +1,35 @@
+﻿@model Taq22100900058_lession11.Models.TaqCategory
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Taq2201900058Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TaqCategory</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TaqCateName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TaqCateName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TaqStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TaqStatus)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TaqID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

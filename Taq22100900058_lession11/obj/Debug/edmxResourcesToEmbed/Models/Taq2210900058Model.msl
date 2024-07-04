@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TaqK22CNTt3Lession11DbModelStoreContainer" CdmEntityContainer="TaqK22CNTt3Lession11DbEntities">
+    <EntitySetMapping Name="TaqCategories">
+      <EntityTypeMapping TypeName="TaqK22CNTt3Lession11DbModel.TaqCategory">
+        <MappingFragment StoreEntitySet="TaqCategory">
+          <ScalarProperty Name="TaqID" ColumnName="TaqID" />
+          <ScalarProperty Name="TaqCateName" ColumnName="TaqCateName" />
+          <ScalarProperty Name="TaqStatus" ColumnName="TaqStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TaqProducts">
+      <EntityTypeMapping TypeName="TaqK22CNTt3Lession11DbModel.TaqProduct">
+        <MappingFragment StoreEntitySet="TaqProduct">
+          <ScalarProperty Name="TaqID2210900058" ColumnName="TaqID2210900058" />
+          <ScalarProperty Name="TaqProName" ColumnName="TaqProName" />
+          <ScalarProperty Name="TaqQty" ColumnName="TaqQty" />
+          <ScalarProperty Name="TaqPrice" ColumnName="TaqPrice" />
+          <ScalarProperty Name="TaqCateID" ColumnName="TaqCateID" />
+          <ScalarProperty Name="TaqActive" ColumnName="TaqActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

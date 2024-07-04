@@ -1,0 +1,64 @@
+﻿@model IEnumerable<Taq22100900058_lession11.Models.TaqProduct>
+
+@{
+    ViewBag.Title = "danh sach sp";
+    Layout = "~/Views/Shared/_Taq2201900058Layout.cshtml";
+}
+
+<h2>danh sach s</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TaqID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TaqProName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TaqQty)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TaqPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TaqCateID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TaqActive)
+        </th>
+        <th>chuc nang</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TaqID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TaqProName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TaqQty)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TaqPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TaqCateID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TaqActive)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.TaqID2210900058 }) |
+            @Html.ActionLink("Details", "Details", new { id = item.TaqID2210900058 }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.TaqID2210900058 })
+        </td>
+    </tr>
+}
+
+</table>

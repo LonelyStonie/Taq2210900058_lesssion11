@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TaqK22CNTt3Lession11DbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TaqCategory">
+    <Key>
+      <PropertyRef Name="TaqID" />
+    </Key>
+    <Property Name="TaqID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TaqCateName" Type="nvarchar" MaxLength="50" />
+    <Property Name="TaqStatus" Type="int" />
+  </EntityType>
+  <EntityType Name="TaqProduct">
+    <Key>
+      <PropertyRef Name="TaqID2210900058" />
+    </Key>
+    <Property Name="TaqID2210900058" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="TaqProName" Type="nvarchar" MaxLength="50" />
+    <Property Name="TaqQty" Type="int" />
+    <Property Name="TaqPrice" Type="float" />
+    <Property Name="TaqCateID" Type="int" />
+    <Property Name="TaqActive" Type="bit" />
+  </EntityType>
+  <EntityContainer Name="TaqK22CNTt3Lession11DbModelStoreContainer">
+    <EntitySet Name="TaqCategory" EntityType="Self.TaqCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TaqProduct" EntityType="Self.TaqProduct" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
